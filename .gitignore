@@ -3,7 +3,7 @@
 
 # Production
 /build
-
+.venv
 # Generated files
 .docusaurus
 .cache-loader
