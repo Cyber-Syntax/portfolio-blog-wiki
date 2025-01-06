@@ -23,7 +23,7 @@ const config = {
   // Cyber-Syntax/
   baseUrl: "/",
 
-  projectName: "portfolio-blog-wiki", // Usually your repo name.
+  projectName: "cyber-syntax.github.io", // Usually your repo name.
   organizationName: "Cyber-Syntax", // Usually your GitHub org/user name.
   trailingSlash: false,
   // GitHub pages deployment config.
@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
 
-          editUrl: "https://github.com/Cyber-Syntax/portfolio-blog-wiki/",
+          editUrl: "https://github.com/Cyber-Syntax/",
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +62,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
 
-          editUrl: "https://github.com/Cyber-Syntax/portfolio-blog-wiki/",
+          editUrl:
+            "https://github.com/Cyber-Syntax/portfolio-blog-wiki/cyber-syntax.github.io",
 
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
@@ -122,7 +123,7 @@ const config = {
             position: "right",
             dropdownItemsAfter: [
               {
-                to: "https://github.com/Cyber-Syntax/portfolio-blog-wiki/",
+                to: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
                 label: "Help me to translate",
               },
             ],
