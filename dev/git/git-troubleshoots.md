@@ -2,7 +2,7 @@
 sidebar_position: 2
 # slug: /docs/dev/git
 title: Git Troubleshoots
-id: git2
+# id: git2
 tags:
   - git
 ---

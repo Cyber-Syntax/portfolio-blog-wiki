@@ -50,8 +50,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-
-          editUrl: "https://github.com/Cyber-Syntax/",
+          editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
         },
         blog: {
           showReadingTime: true,
@@ -61,10 +60,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-
-          editUrl:
-            "https://github.com/Cyber-Syntax/portfolio-blog-wiki/cyber-syntax.github.io",
-
+          editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -86,6 +82,18 @@ const config = {
         routeBasePath: "nixos",
         sidebarPath: "./sidebars.js",
         // ... other options
+        editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "dev",
+        path: "dev",
+        routeBasePath: "dev",
+        sidebarPath: "./sidebars.js",
+        // ... other options
+        editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
       },
     ],
   ],
@@ -119,6 +127,17 @@ const config = {
             label: "NixOS",
           },
           {
+            to: "dev",
+            position: "right",
+            label: "Developer",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "defaultSidebar",
+            position: "right",
+            label: "Wiki",
+          },
+          {
             type: "localeDropdown",
             position: "right",
             dropdownItemsAfter: [
@@ -128,12 +147,7 @@ const config = {
               },
             ],
           },
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Wiki",
-          },
+
           { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/Cyber-Syntax",
@@ -145,15 +159,15 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Wiki",
-                to: "/docs/intro",
-              },
-            ],
-          },
+          //{
+          //  title: "Docs",
+          //  items: [
+          //    {
+          //      label: "Wiki",
+          //      //to: "/docs",
+          //    },
+          //  ],
+          //},
           {
             title: "Community",
             items: [

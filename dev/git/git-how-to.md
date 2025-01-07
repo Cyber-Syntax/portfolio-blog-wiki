@@ -2,7 +2,7 @@
 sidebar_position: 1
 # slug: /docs/dev/git
 title: Git Fundamentals
-id: git1
+# id: git1
 tags:
   - git
 ---

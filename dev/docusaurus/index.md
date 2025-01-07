@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Docusaurus How to's
-id: docusaurus
+# id: docusaurus
 tags:
   - docusaurus
 ---

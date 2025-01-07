@@ -2,7 +2,7 @@
 sidebar_position: 1
 # slug: /nixos
 title: Nixos Troubleshoots
-id: nixos1
+# id: nixos1
 tags:
   - nixos
 ---
