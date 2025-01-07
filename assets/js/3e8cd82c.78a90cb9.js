@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7805],{1721:s=>{s.exports=JSON.parse('{"tags":[{"label":"nixos","permalink":"/nixos/tags/nixos","count":2}]}')}}]);
