@@ -1,8 +1,7 @@
 import React from "react";
 //import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout"; // Import the Layout component
-//TEST:
-import MDXContent from "@theme/MDXContent";
+//import MDXContent from "@theme/MDXContent";
 
 //import Link from "@docusaurus/Link"; // Docusaurus Link for navigation
 //import "bootstrap/scss/bootstrap.scss"; // Include the full Bootstrap SCSS (optional)
@@ -22,7 +21,7 @@ interface Skill {
 const skills: Skill[] = [
   {
     id: "linux",
-    title: "Linux",
+    title: "🐧 Linux",
     description:
       "He knows the most commonly used terminal commands and can troubleshoot common issues. He is passionate about Linux and eager to enhance his knowledge of it. He has several years of experience using Linux as his main operating system.",
     category: ["all", "sysadmin"],
@@ -32,7 +31,7 @@ const skills: Skill[] = [
     title: "🚀 Python",
     description:
       "Proficient in writing scripts, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks.",
-    category: ["all", "sysadmin"],
+    category: ["all", "sysadmin", "developer"],
   },
   {
     id: "bash",
@@ -46,7 +45,7 @@ const skills: Skill[] = [
     title: "🚧 Git",
     description:
       "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage.",
-    category: ["all", "sysadmin"],
+    category: ["all", "sysadmin", "developer"],
   },
   // Add more skill objects as necessary...
   {
@@ -54,19 +53,19 @@ const skills: Skill[] = [
     title: "🛸 Web Development",
     description:
       "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies. I also developed websites using WordPress, Joomla, Hugo, Jeckly and Docusaurus.",
-    category: ["all", "sysadmin"],
+    category: ["all", "sysadmin", "developer"],
   },
   {
     id: "sql",
     title: "🌟 SQL",
     description: "Mastered fundamentals with school curriculum.",
-    category: ["all", "sysadmin"],
+    category: ["all", "sysadmin", "developer"],
   },
   {
     id: "cpp",
     title: "🌟 C++",
     description: "Acquired fundamental knowledge through school curriculum.",
-    category: ["all", "sysadmin"],
+    category: ["all", "sysadmin", "developer"],
   },
   {
     id: "cloud",
@@ -158,17 +157,21 @@ function SkillPage() {
                     className="col col--6 margin-bottom--lg filtr-item"
                     data-category={skill.category}
                   >
-                    <div className="d-flex">
-                      <h3
-                        className="text--truncate cardTitle_dwRT"
-                        title="Pages"
-                      >
-                        {skill.title}
-                      </h3>
-                    </div>
+                    <div className="item shadow--tl card">
+                      <div className="card_header margin-top--md margin-left--md ">
+                        <h3
+                          className="text--truncate cardTitle_dwRT"
+                          title="Pages"
+                        >
+                          {skill.title}
+                        </h3>
+                      </div>
 
-                    <div className="sub-title">
-                      <p>{skill.description}</p>
+                      <div className="card__body">
+                        <div className="sub-title">
+                          <p>{skill.description}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}

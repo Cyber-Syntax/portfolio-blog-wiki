@@ -211,7 +211,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Cyber-Syntax Personal Portfolio, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: prismThemes.oneLight,
+        theme: prismThemes.github,
         darkTheme: prismThemes.oneDark,
       },
     }),

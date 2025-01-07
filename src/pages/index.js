@@ -16,12 +16,25 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+
+        <div className={`${styles.buttons}`}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg  padding-horiz--md margin-right--md"
+            to="/nixos"
+          >
+            My NixOS Wiki
+          </Link>
+          <Link
+            className="button button--secondary button--lg  padding-horiz--md  margin-right--md"
+            to="/dev"
+          >
+            My Developer Wiki
+          </Link>
+          <Link
+            className="button button--secondary button--lg  padding-horiz--md  margin-right--md"
             to="/docs/intro"
           >
-            My Wiki
+            Other Wiki
           </Link>
         </div>
       </div>

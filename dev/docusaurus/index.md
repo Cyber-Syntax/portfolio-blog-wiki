@@ -8,6 +8,10 @@ tags:
 
 <!-- TOC -->
 
+## How to change some of the css?
+
+> [!INFO] css: https://infima.dev/
+
 ## How to create multiple docs?
 
 ```js

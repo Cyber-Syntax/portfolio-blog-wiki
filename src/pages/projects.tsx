@@ -7,6 +7,7 @@ import Layout from "@theme/Layout"; // Import the Layout component
 
 // Custom styles
 //import styles from "./../components/HomepageFeatures/styles.module.css";
+import styles from "./../css/custom.css";
 
 //Typescript projects section
 interface Project {
@@ -132,15 +133,6 @@ function ProjectPage() {
 
   return (
     <Layout title="Projects" description="My projects">
-      {/* Header Section */}
-      {/*
-      <header className="hero hero--primary">
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title} - Projects</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-        </div>
-      </header>
-      */}
       <nav
         className="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl"
         aria-label="Breadcrumbs"
@@ -174,7 +166,6 @@ function ProjectPage() {
         </ul>
       </nav>
 
-      {/* Main Content */}
       <main className="container">
         <section>
           <div className="tabs-container " id="projects">
@@ -209,43 +200,45 @@ function ProjectPage() {
                     className="col col--6 margin-bottom--lg filtr-item"
                     data-category={project.category}
                   >
-                    <div className="d-flex">
-                      <h3
-                        className="text--truncate cardTitle_dwRT"
-                        title="Pages"
-                      >
-                        {project.title}
-                      </h3>
-                    </div>
-
-                    <div className="sub-title">
-                      <span>{project.owner}</span>
-                      <p>{project.description}</p>
-
-                      <div className="project-tags-holder">
-                        {project.tags.map((tag, idx) => (
-                          <span key={idx} className="">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <footer className="row docusaurus-mt-lg">
-                      <div className="card__footer col col--9">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="button button--primary button--outline"
+                    <div className="item shadow--tl card">
+                      <div className="card__header">
+                        <h3
+                          className="text--truncate cardTitle_dwRT"
+                          title="Pages"
                         >
-                          <span className="button__icon"></span>
-                          Discover
-                        </a>
+                          {project.title}
+                        </h3>
                       </div>
-                      <div className="col text--right col--3">
-                        <span>{project.date}</span>
+                      <div className="card__body">
+                        <div className="sub-title">
+                          <span>{project.owner}</span>
+                          <p>{project.description}</p>
+                          <div className="project-tags-holder badge badge--primary">
+                            {project.tags.map((tag, idx) => (
+                              <span key={idx} className="">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       </div>
-                    </footer>
+                      <div className="card__footer row docusaurus-mt-lg">
+                        <div className="col col--9">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button button--primary button--outline button--lg"
+                          >
+                            <span className="button__icon"></span>
+                            Discover
+                          </a>
+                        </div>
+                        <div className="text--right">
+                          <span>{project.date} </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 ))}
                 {filteredProjects.length === 0 && (

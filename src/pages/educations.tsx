@@ -151,7 +151,7 @@ function EducationPage() {
                 </li>
               ))}
             </ul>
-            <div className="container-md themed-container text-center">
+            <div className="item shadow--tl card container-md themed-container text-center margin-bottom--lg">
               <div className="education-container container margin-top--lg ">
                 {filteredEducation.map((education, index) => (
                   <div key={index} className="education-item margin-bottom--lg">
