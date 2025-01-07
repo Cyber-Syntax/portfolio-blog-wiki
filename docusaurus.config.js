@@ -51,8 +51,13 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+          // Equivalent to `enableUpdateBy`.
+          showLastUpdateAuthor: true,
+          // Equivalent to `enableUpdateTime`.
+          showLastUpdateTime: true,
         },
         blog: {
+          postsPerPage: 5,
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],
@@ -83,6 +88,10 @@ const config = {
         sidebarPath: "./sidebars.js",
         // ... other options
         editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+        // Equivalent to `enableUpdateBy`.
+        showLastUpdateAuthor: true,
+        // Equivalent to `enableUpdateTime`.
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -94,6 +103,10 @@ const config = {
         sidebarPath: "./sidebars.js",
         // ... other options
         editUrl: "https://github.com/Cyber-Syntax/cyber-syntax.github.io",
+        // Equivalent to `enableUpdateBy`.
+        showLastUpdateAuthor: true,
+        // Equivalent to `enableUpdateTime`.
+        showLastUpdateTime: true,
       },
     ],
   ],
