@@ -65,7 +65,7 @@ NIXOS_INSTALL_BOOTLOADER=1 /run/current-system/bin/switch-to-configuration boot
 
 #### Revert back flake.lock
 
-1. [How to revert one file?](12_IT-fundamental-lessons/12.01_App%20Lessons/git/git.md#How%20to%20revert%20one%20file?)
+1. revert via git
 2. Rebuild again.
 3. Test the generation and if it's work change that to default boot:
 
