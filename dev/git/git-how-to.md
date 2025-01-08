@@ -120,6 +120,54 @@ git checkout feat/extract
 git rebase origin/main
 ```
 
+## How to squash N commits to 1 commit?
+
+> [!INFO] More Resource: https://www.freecodecamp.org/news/git-squash-commits/
+
+```python
+# Commits = 26
+git rebase -i HEAD~26
+```
+
+- After that select the commit you want to make first commit with `pick` , make others `squash` or `s`
+- If you want to make 2 commit from 26 commit use `b` called `break` between 2 commit. After first commit done with rebase, `git rebase --continue` to handle second commit.
+
+```python
+pick adaafa495 fix: settings section
+s 49b1b4caa fix: delete unused string
+s 8a34a3df0 fix: update changed GITHUB FORM string
+s 7ba585e69 fix: delete unused strings
+s 11de85c4c fix: delete unused CALDAV strings
+s 360011b11 fix: delete unused GITEA strings
+s d64180711 fix: delete unused unknown FORM string
+s d666891cb fix: delete unused redmine section strings
+s 063898871 fix: delete unused OpenProject strings
+s 69e698c38 fix: delete unused string
+s 6c9ccc810 fix!: delete unused PP strings
+b
+pick ee3562b7d feat!: add missing CALENDAR strings
+s 6104a1446 feat: add missing DROPBOX string
+s ca7172528 feat: add missing GITHUB error string
+s 230bfbcec feat: add missing ISSUE strings
+s 6dfa77741 feat: add missing notes section strings
+s 800edab2f feat!: add PLANNER strings
+s c164ace47 feat: add PROCRASTINATION strings
+s 06c321b42 feat: add stopwatch strings
+s 3ba1657f6 feat!: add SYNC string
+s 6b43158e9 feat: add missing strings
+s 07990c502 feat!: add CALENDARS string
+s 071689691 feat: add missing strings
+s e227c7580 fix: translate openproject strings
+s fb01adc04 fix: add missing strings
+s 92ed01bad fix: add missing REMINDER strings
+
+```
+
+- update commit message for first commit e.g `fix!: delete unused strings`
+- `git rebase --continue`
+- update commit message e.g `feat!: add missing strings`
+- `git push origin turkish --force`
+
 ## How to sync and solve commit behind
 
 > [!INFO] how to fix 3 commit behind, 9 commit ahead.
