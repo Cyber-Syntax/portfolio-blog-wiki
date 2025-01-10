@@ -190,7 +190,7 @@ const config = {
               },
               {
                 label: "X",
-                href: "https://twitter.com/serif_et",
+                href: "https://x.com/cyb_serif",
               },
             ],
           },
